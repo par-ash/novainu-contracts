@@ -1,0 +1,59 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "PositionRouterCallbackReceiverTest",
+  "sourceName": "contracts/core/test/PositionRouterCallbackReceiverTest.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "positionKey",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "isExecuted",
+          "type": "bool"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "isIncrease",
+          "type": "bool"
+        }
+      ],
+      "name": "CallbackCalled",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "positionKey",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bool",
+          "name": "isExecuted",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "isIncrease",
+          "type": "bool"
+        }
+      ],
+      "name": "novaPositionCallback",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b5060d68061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063bbae655614602d575b600080fd5b605760048036036060811015604157600080fd5b5080359060208101351515906040013515156059565b005b6040805184815283151560208201528215158183015290517f4c5b183c9c52e97ac4369ee0a4685a3af880b74946655c4b6e7366b6af1733809181900360600190a150505056fea2646970667358221220a0e32c11f6c9d4409cb3d2135b49a2c783e0e9b78c1cfc53428144ddf9378d2064736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063bbae655614602d575b600080fd5b605760048036036060811015604157600080fd5b5080359060208101351515906040013515156059565b005b6040805184815283151560208201528215158183015290517f4c5b183c9c52e97ac4369ee0a4685a3af880b74946655c4b6e7366b6af1733809181900360600190a150505056fea2646970667358221220a0e32c11f6c9d4409cb3d2135b49a2c783e0e9b78c1cfc53428144ddf9378d2064736f6c634300060c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

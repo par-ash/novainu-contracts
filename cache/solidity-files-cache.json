@@ -1,0 +1,5049 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/access/Governable.sol": {
+      "lastModificationDate": 1673523713790,
+      "contentHash": "05dd8a71481cfeae4ec317005e74cda2",
+      "sourceName": "contracts/access/Governable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Governable"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/tokens/Bridge.sol": {
+      "lastModificationDate": 1673523713805,
+      "contentHash": "278c89f8507fd56d29cb932891225d2e",
+      "sourceName": "contracts/tokens/Bridge.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/token/IERC20.sol",
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Bridge"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/libraries/token/IERC20.sol": {
+      "lastModificationDate": 1673523713799,
+      "contentHash": "108806e05552e6e6b8da283af9c455b2",
+      "sourceName": "contracts/libraries/token/IERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/libraries/math/SafeMath.sol": {
+      "lastModificationDate": 1673523713797,
+      "contentHash": "5a01b10c876b53fa1ef793328741b8af",
+      "sourceName": "contracts/libraries/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/libraries/token/SafeERC20.sol": {
+      "lastModificationDate": 1673523713799,
+      "contentHash": "3972576c8f1324bf28e1cb62397f9899",
+      "sourceName": "contracts/libraries/token/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "../math/SafeMath.sol",
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/libraries/utils/ReentrancyGuard.sol": {
+      "lastModificationDate": 1673523713800,
+      "contentHash": "d3b541f0c45b789b20107137c6ad526f",
+      "sourceName": "contracts/libraries/utils/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/libraries/utils/Address.sol": {
+      "lastModificationDate": 1673523713799,
+      "contentHash": "b32ef078a758efa4d45eb9c0b3e102d5",
+      "sourceName": "contracts/libraries/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/tokens/YieldTracker.sol": {
+      "lastModificationDate": 1673523713806,
+      "contentHash": "3a95fcf37cf18e9f658e9571d6eb8eba",
+      "sourceName": "contracts/tokens/YieldTracker.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "./interfaces/IDistributor.sol",
+        "./interfaces/IYieldTracker.sol",
+        "./interfaces/IYieldToken.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "YieldTracker"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/tokens/interfaces/IDistributor.sol": {
+      "lastModificationDate": 1673523713807,
+      "contentHash": "57ed93765a80528d0bd9c818bbcdfd07",
+      "sourceName": "contracts/tokens/interfaces/IDistributor.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IDistributor"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/tokens/interfaces/IYieldTracker.sol": {
+      "lastModificationDate": 1673523713807,
+      "contentHash": "6d94dcdf3613e43b5b164b8bf841e18d",
+      "sourceName": "contracts/tokens/interfaces/IYieldTracker.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IYieldTracker"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/tokens/interfaces/IYieldToken.sol": {
+      "lastModificationDate": 1673523713807,
+      "contentHash": "45bddf5e1d39e63fe161e7352616088c",
+      "sourceName": "contracts/tokens/interfaces/IYieldToken.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IYieldToken"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/tokens/YieldToken.sol": {
+      "lastModificationDate": 1673523713806,
+      "contentHash": "c8866f99f1f3889099a69fedf76c86b1",
+      "sourceName": "contracts/tokens/YieldToken.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "./interfaces/IYieldTracker.sol",
+        "./interfaces/IYieldToken.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "YieldToken"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/tokens/BaseToken.sol": {
+      "lastModificationDate": 1673523713805,
+      "contentHash": "897e7143b505b9ef05626b12fce1176f",
+      "sourceName": "contracts/tokens/BaseToken.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "./interfaces/IYieldTracker.sol",
+        "./interfaces/IBaseToken.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "BaseToken"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/tokens/interfaces/IBaseToken.sol": {
+      "lastModificationDate": 1673523713807,
+      "contentHash": "c274786fe254cdc2e85727193b132241",
+      "sourceName": "contracts/tokens/interfaces/IBaseToken.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IBaseToken"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/tokens/MintableBaseToken.sol": {
+      "lastModificationDate": 1673523713806,
+      "contentHash": "f33f5c0eb36d405aff1393fa79a194ee",
+      "sourceName": "contracts/tokens/MintableBaseToken.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BaseToken.sol",
+        "./interfaces/IMintable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MintableBaseToken"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/tokens/interfaces/IMintable.sol": {
+      "lastModificationDate": 1673523713807,
+      "contentHash": "4ff49bccf043be8d5d76ca6c8927658a",
+      "sourceName": "contracts/tokens/interfaces/IMintable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IMintable"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/tokens/SnapshotToken.sol": {
+      "lastModificationDate": 1673523713806,
+      "contentHash": "d4f7b4c4dae05b7363c3260ed4cb61b6",
+      "sourceName": "contracts/tokens/SnapshotToken.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./MintableBaseToken.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "SnapshotToken"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/staking/Vester.sol": {
+      "lastModificationDate": 1673523713805,
+      "contentHash": "ebd94e60a059ef3e0038262e59c57ed0",
+      "sourceName": "contracts/staking/Vester.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "./interfaces/IRewardTracker.sol",
+        "./interfaces/IVester.sol",
+        "../tokens/interfaces/IMintable.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Vester"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/staking/interfaces/IRewardTracker.sol": {
+      "lastModificationDate": 1673523713805,
+      "contentHash": "318fbbed6a4bb5e6d813bf785fb5e898",
+      "sourceName": "contracts/staking/interfaces/IRewardTracker.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IRewardTracker"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/staking/interfaces/IVester.sol": {
+      "lastModificationDate": 1673523713805,
+      "contentHash": "ab92731f7a5236e735280c47236388b3",
+      "sourceName": "contracts/staking/interfaces/IVester.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IVester"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/staking/RewardRouterV2.sol": {
+      "lastModificationDate": 1673894221744,
+      "contentHash": "fae86bc1feb0cb6e16c96cf36ad04f13",
+      "sourceName": "contracts/staking/RewardRouterV2.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "../libraries/utils/Address.sol",
+        "./interfaces/IRewardTracker.sol",
+        "./interfaces/IRewardRouterV2.sol",
+        "./interfaces/IVester.sol",
+        "../tokens/interfaces/IMintable.sol",
+        "../tokens/interfaces/IWETH.sol",
+        "../core/interfaces/INlpManager.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "RewardRouterV2"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/staking/interfaces/IRewardRouterV2.sol": {
+      "lastModificationDate": 1673894127723,
+      "contentHash": "58cb9093517c1562a5f971911e7fd8ad",
+      "sourceName": "contracts/staking/interfaces/IRewardRouterV2.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IRewardRouterV2"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/tokens/interfaces/IWETH.sol": {
+      "lastModificationDate": 1673523713807,
+      "contentHash": "549a2b85c8a7cbc9af9274774af6e628",
+      "sourceName": "contracts/tokens/interfaces/IWETH.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/interfaces/INlpManager.sol": {
+      "lastModificationDate": 1673893449430,
+      "contentHash": "9e590150b4c3786577478ff3d785c7d4",
+      "sourceName": "contracts/core/interfaces/INlpManager.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IVault.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "INlpManager"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/interfaces/IVault.sol": {
+      "lastModificationDate": 1673523713794,
+      "contentHash": "3ec6cf0754d9416a0dae79ebf57aadc1",
+      "sourceName": "contracts/core/interfaces/IVault.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IVaultUtils.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IVault"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/interfaces/IVaultUtils.sol": {
+      "lastModificationDate": 1673523713794,
+      "contentHash": "7a1a5e7286fb35d142fdf13cccbdaaeb",
+      "sourceName": "contracts/core/interfaces/IVaultUtils.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IVaultUtils"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/staking/StakedNlpMigrator.sol": {
+      "lastModificationDate": 1673894828079,
+      "contentHash": "cdbfdfbf30c2c621b9e0bfb9e86cd881",
+      "sourceName": "contracts/staking/StakedNlpMigrator.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../core/interfaces/INlpManager.sol",
+        "./interfaces/IRewardTracker.sol",
+        "./interfaces/IRewardTracker.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "StakedNlpMigrator"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/staking/StakedNlp.sol": {
+      "lastModificationDate": 1673894820031,
+      "contentHash": "92f1cc712f42d08789042270019e7721",
+      "sourceName": "contracts/staking/StakedNlp.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../core/interfaces/INlpManager.sol",
+        "./interfaces/IRewardTracker.sol",
+        "./interfaces/IRewardTracker.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "StakedNlp"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/tokens/YieldFarm.sol": {
+      "lastModificationDate": 1673523713806,
+      "contentHash": "6f7a28eaeab54a58c5a71754d1fc673a",
+      "sourceName": "contracts/tokens/YieldFarm.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "./YieldToken.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "YieldFarm"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/tokens/TimeDistributor.sol": {
+      "lastModificationDate": 1673523713806,
+      "contentHash": "ac9ed56ac7874d8c1edf9e01532f8f38",
+      "sourceName": "contracts/tokens/TimeDistributor.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "./interfaces/IDistributor.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "TimeDistributor"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/tokens/WETH.sol": {
+      "lastModificationDate": 1673523713806,
+      "contentHash": "bba802f528b75a886c62d92df3cbd202",
+      "sourceName": "contracts/tokens/WETH.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/token/IERC20.sol",
+        "../libraries/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "WETH"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/tokens/Token.sol": {
+      "lastModificationDate": 1673523713806,
+      "contentHash": "56b3430fb721e5f180b6f90c372b9b6e",
+      "sourceName": "contracts/tokens/Token.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/token/IERC20.sol",
+        "../libraries/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Token"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/amm/PancakeRouter.sol": {
+      "lastModificationDate": 1673523713791,
+      "contentHash": "aa6b505b2c0de49b3c4a2bd6fc71625c",
+      "sourceName": "contracts/amm/PancakeRouter.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../tokens/Token.sol",
+        "../libraries/token/IERC20.sol",
+        "./interfaces/IPancakeRouter.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PancakeRouter"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/amm/interfaces/IPancakeRouter.sol": {
+      "lastModificationDate": 1673523713792,
+      "contentHash": "cea35d613443189048f49ae6453d9e32",
+      "sourceName": "contracts/amm/interfaces/IPancakeRouter.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IPancakeRouter"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/gambit-token/Treasury.sol": {
+      "lastModificationDate": 1673523713795,
+      "contentHash": "efac7300dbdc0d8410213e519679640b",
+      "sourceName": "contracts/gambit-token/Treasury.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "../amm/interfaces/IPancakeRouter.sol",
+        "./interfaces/IGMT.sol",
+        "../peripherals/interfaces/ITimelockTarget.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Treasury"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/gambit-token/interfaces/IGMT.sol": {
+      "lastModificationDate": 1673523713795,
+      "contentHash": "10f2f01b8a7349c1026722341ba37c6c",
+      "sourceName": "contracts/gambit-token/interfaces/IGMT.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IGMT"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/peripherals/interfaces/ITimelockTarget.sol": {
+      "lastModificationDate": 1673523713803,
+      "contentHash": "c50ac74accd4fb118aa2a833b4d24fd4",
+      "sourceName": "contracts/peripherals/interfaces/ITimelockTarget.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ITimelockTarget"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/peripherals/Timelock.sol": {
+      "lastModificationDate": 1673894127718,
+      "contentHash": "a31265ba59f8497e48a6f4f8a36f1efd",
+      "sourceName": "contracts/peripherals/Timelock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/ITimelockTarget.sol",
+        "./interfaces/ITimelock.sol",
+        "./interfaces/IHandlerTarget.sol",
+        "../access/interfaces/IAdmin.sol",
+        "../core/interfaces/IVault.sol",
+        "../core/interfaces/IVaultUtils.sol",
+        "../core/interfaces/INlpManager.sol",
+        "../referrals/interfaces/IReferralStorage.sol",
+        "../tokens/interfaces/IYieldToken.sol",
+        "../tokens/interfaces/IBaseToken.sol",
+        "../tokens/interfaces/IMintable.sol",
+        "../tokens/interfaces/IUSDG.sol",
+        "../staking/interfaces/IVester.sol",
+        "../staking/interfaces/IRewardRouterV2.sol",
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Timelock"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/peripherals/interfaces/ITimelock.sol": {
+      "lastModificationDate": 1673523713803,
+      "contentHash": "92247a863ca13c1ad831c17fd8fb1a40",
+      "sourceName": "contracts/peripherals/interfaces/ITimelock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ITimelock"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/peripherals/interfaces/IHandlerTarget.sol": {
+      "lastModificationDate": 1673523713803,
+      "contentHash": "240660fb858f54b525bd06ec9dfc39f1",
+      "sourceName": "contracts/peripherals/interfaces/IHandlerTarget.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IHandlerTarget"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/access/interfaces/IAdmin.sol": {
+      "lastModificationDate": 1673523713791,
+      "contentHash": "b4adba1e45596a3e04d0b599df5be38a",
+      "sourceName": "contracts/access/interfaces/IAdmin.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IAdmin"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/referrals/interfaces/IReferralStorage.sol": {
+      "lastModificationDate": 1673523713803,
+      "contentHash": "22325096f728801848c7d6964b570c4f",
+      "sourceName": "contracts/referrals/interfaces/IReferralStorage.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IReferralStorage"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/tokens/interfaces/IUSDG.sol": {
+      "lastModificationDate": 1673523713807,
+      "contentHash": "0eea0bfc73624cce4a243baf6ce89b7c",
+      "sourceName": "contracts/tokens/interfaces/IUSDG.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IUSDG"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/tokens/USDG.sol": {
+      "lastModificationDate": 1673523713806,
+      "contentHash": "4bb9ec83b03a3852b101b4b7c50315d9",
+      "sourceName": "contracts/tokens/USDG.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IUSDG.sol",
+        "./YieldToken.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "USDG"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/peripherals/PriceFeedTimelock.sol": {
+      "lastModificationDate": 1673523713802,
+      "contentHash": "a30b4ffc4ae9f9b9df15a17017810633",
+      "sourceName": "contracts/peripherals/PriceFeedTimelock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/ITimelockTarget.sol",
+        "./interfaces/IHandlerTarget.sol",
+        "../access/interfaces/IAdmin.sol",
+        "../core/interfaces/IVaultPriceFeed.sol",
+        "../oracle/interfaces/IFastPriceFeed.sol",
+        "../referrals/interfaces/IReferralStorage.sol",
+        "../tokens/interfaces/IYieldToken.sol",
+        "../tokens/interfaces/IBaseToken.sol",
+        "../tokens/interfaces/IMintable.sol",
+        "../tokens/interfaces/IUSDG.sol",
+        "../staking/interfaces/IVester.sol",
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PriceFeedTimelock"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/interfaces/IVaultPriceFeed.sol": {
+      "lastModificationDate": 1673523713794,
+      "contentHash": "74ca35bf9cc20ba3f3983b37f24c0f99",
+      "sourceName": "contracts/core/interfaces/IVaultPriceFeed.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IVaultPriceFeed"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/oracle/interfaces/IFastPriceFeed.sol": {
+      "lastModificationDate": 1673523713801,
+      "contentHash": "2e2e05a8581d244ad528afdbde43e628",
+      "sourceName": "contracts/oracle/interfaces/IFastPriceFeed.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IFastPriceFeed"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/peripherals/NovaTimelock.sol": {
+      "lastModificationDate": 1673894760251,
+      "contentHash": "59d5b02ae573bfd3d21417c6f17c2c33",
+      "sourceName": "contracts/peripherals/NovaTimelock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/ITimelockTarget.sol",
+        "./interfaces/INovaTimelock.sol",
+        "./interfaces/IHandlerTarget.sol",
+        "../access/interfaces/IAdmin.sol",
+        "../core/interfaces/IVault.sol",
+        "../core/interfaces/IVaultUtils.sol",
+        "../core/interfaces/IVaultPriceFeed.sol",
+        "../core/interfaces/IRouter.sol",
+        "../tokens/interfaces/IYieldToken.sol",
+        "../tokens/interfaces/IBaseToken.sol",
+        "../tokens/interfaces/IMintable.sol",
+        "../tokens/interfaces/IUSDG.sol",
+        "../staking/interfaces/IVester.sol",
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "NovaTimelock"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/peripherals/interfaces/INovaTimelock.sol": {
+      "lastModificationDate": 1673894737594,
+      "contentHash": "452e8fa26d2a1c64d53901c778fd8795",
+      "sourceName": "contracts/peripherals/interfaces/INovaTimelock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "INovaTimelock"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/interfaces/IRouter.sol": {
+      "lastModificationDate": 1673523713794,
+      "contentHash": "0d3d0c76ede94b3beb23476a032b923e",
+      "sourceName": "contracts/core/interfaces/IRouter.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IRouter"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/Router.sol": {
+      "lastModificationDate": 1673523713793,
+      "contentHash": "15ab31a618bcbb770eea88eae177bffe",
+      "sourceName": "contracts/core/Router.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/Address.sol",
+        "../tokens/interfaces/IWETH.sol",
+        "./interfaces/IVault.sol",
+        "./interfaces/IRouter.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Router"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/peripherals/VaultReader.sol": {
+      "lastModificationDate": 1673523713802,
+      "contentHash": "68a80e19a75a2396728e4b102ce5761d",
+      "sourceName": "contracts/peripherals/VaultReader.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../core/interfaces/IVault.sol",
+        "../core/interfaces/IVaultPriceFeed.sol",
+        "../core/interfaces/IBasePositionManager.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "VaultReader"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/interfaces/IBasePositionManager.sol": {
+      "lastModificationDate": 1673523713794,
+      "contentHash": "dcf60252d3d1e6ef2975a786a0d1fca2",
+      "sourceName": "contracts/core/interfaces/IBasePositionManager.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IBasePositionManager"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/BasePositionManager.sol": {
+      "lastModificationDate": 1673523713792,
+      "contentHash": "cc92ac046d9d7c149af48f547d2aa707",
+      "sourceName": "contracts/core/BasePositionManager.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../tokens/interfaces/IWETH.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/Address.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "./interfaces/IRouter.sol",
+        "./interfaces/IVault.sol",
+        "./interfaces/IShortsTracker.sol",
+        "./interfaces/IOrderBook.sol",
+        "./interfaces/IBasePositionManager.sol",
+        "../access/Governable.sol",
+        "../peripherals/interfaces/ITimelock.sol",
+        "../referrals/interfaces/IReferralStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "BasePositionManager"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/interfaces/IShortsTracker.sol": {
+      "lastModificationDate": 1673523713794,
+      "contentHash": "815bbe84eb3aba2828ae44cbc9d3dce0",
+      "sourceName": "contracts/core/interfaces/IShortsTracker.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IShortsTracker"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/interfaces/IOrderBook.sol": {
+      "lastModificationDate": 1673523713794,
+      "contentHash": "b42daf5044eea9b76e3bcd1f3dc02f36",
+      "sourceName": "contracts/core/interfaces/IOrderBook.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IOrderBook"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/PositionRouter.sol": {
+      "lastModificationDate": 1673894221753,
+      "contentHash": "86ded34c6853f1250f4d17a9bf8027cd",
+      "sourceName": "contracts/core/PositionRouter.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IRouter.sol",
+        "./interfaces/IVault.sol",
+        "./interfaces/IPositionRouter.sol",
+        "./interfaces/IPositionRouterCallbackReceiver.sol",
+        "../libraries/utils/Address.sol",
+        "../peripherals/interfaces/ITimelock.sol",
+        "./BasePositionManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "PositionRouter"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/interfaces/IPositionRouter.sol": {
+      "lastModificationDate": 1673523713794,
+      "contentHash": "2c6f48eba16165c2377a0c51b77be986",
+      "sourceName": "contracts/core/interfaces/IPositionRouter.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IPositionRouter"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/interfaces/IPositionRouterCallbackReceiver.sol": {
+      "lastModificationDate": 1673893233279,
+      "contentHash": "1ad66df4a233ea4e839bfc96425b8d62",
+      "sourceName": "contracts/core/interfaces/IPositionRouterCallbackReceiver.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "IPositionRouterCallbackReceiver"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/referrals/ReferralStorage.sol": {
+      "lastModificationDate": 1673523713803,
+      "contentHash": "848e0eba48cdc812684e420beb258846",
+      "sourceName": "contracts/referrals/ReferralStorage.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../access/Governable.sol",
+        "../peripherals/interfaces/ITimelock.sol",
+        "./interfaces/IReferralStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ReferralStorage"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/referrals/ReferralReader.sol": {
+      "lastModificationDate": 1673523713803,
+      "contentHash": "e53b60210febf5ebd2d04b1dcd42cd0d",
+      "sourceName": "contracts/referrals/ReferralReader.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IReferralStorage.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ReferralReader"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/PositionManager.sol": {
+      "lastModificationDate": 1673523713792,
+      "contentHash": "20d0558dfbedbbce273c631f89f4171e",
+      "sourceName": "contracts/core/PositionManager.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IRouter.sol",
+        "./interfaces/IVault.sol",
+        "./interfaces/IOrderBook.sol",
+        "../peripherals/interfaces/ITimelock.sol",
+        "./BasePositionManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "PositionManager"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/peripherals/OrderBookReader.sol": {
+      "lastModificationDate": 1673523713802,
+      "contentHash": "98ff1be4b6bae93577ee7d3e39334d89",
+      "sourceName": "contracts/peripherals/OrderBookReader.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../core/interfaces/IOrderBook.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "OrderBookReader"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/OrderBook.sol": {
+      "lastModificationDate": 1673523713792,
+      "contentHash": "790bdfc83301a95f25f9cd5c6ae33c12",
+      "sourceName": "contracts/core/OrderBook.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../tokens/interfaces/IWETH.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/Address.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "./interfaces/IRouter.sol",
+        "./interfaces/IVault.sol",
+        "./interfaces/IOrderBook.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "OrderBook"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/staking/RewardRouter.sol": {
+      "lastModificationDate": 1673894222045,
+      "contentHash": "5baa7728001d83e8dac5d6de9cb4f7ea",
+      "sourceName": "contracts/staking/RewardRouter.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "../libraries/utils/Address.sol",
+        "./interfaces/IRewardTracker.sol",
+        "../tokens/interfaces/IMintable.sol",
+        "../tokens/interfaces/IWETH.sol",
+        "../core/interfaces/INlpManager.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "RewardRouter"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/libraries/token/ERC721/ERC721.sol": {
+      "lastModificationDate": 1673523713798,
+      "contentHash": "1562b757da01482efe203333386c2958",
+      "sourceName": "contracts/libraries/token/ERC721/ERC721.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../GSN/Context.sol",
+        "./IERC721.sol",
+        "./IERC721Metadata.sol",
+        "./IERC721Enumerable.sol",
+        "./IERC721Receiver.sol",
+        "../../introspection/ERC165.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol",
+        "../../utils/EnumerableSet.sol",
+        "../../utils/EnumerableMap.sol",
+        "../../utils/Strings.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ERC721"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/libraries/GSN/Context.sol": {
+      "lastModificationDate": 1673523713797,
+      "contentHash": "d606d7157f27eef50dd4c297d3733e6d",
+      "sourceName": "contracts/libraries/GSN/Context.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/libraries/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1673523713799,
+      "contentHash": "471702709d00ad3e1827825c4f7ea434",
+      "sourceName": "contracts/libraries/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/libraries/token/ERC721/IERC721Metadata.sol": {
+      "lastModificationDate": 1673523713799,
+      "contentHash": "c747635b7aafc7aaef8ff5783ed25e6b",
+      "sourceName": "contracts/libraries/token/ERC721/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/libraries/token/ERC721/IERC721Enumerable.sol": {
+      "lastModificationDate": 1673523713799,
+      "contentHash": "e282e7d4aa6b40bfc9ee622b0f006ed5",
+      "sourceName": "contracts/libraries/token/ERC721/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/libraries/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1673523713799,
+      "contentHash": "09100c54c54a5b8ad854b2069b36fb43",
+      "sourceName": "contracts/libraries/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/libraries/introspection/ERC165.sol": {
+      "lastModificationDate": 1673523713797,
+      "contentHash": "cd8a4a4c1e298943d96dd5ed09ad27f3",
+      "sourceName": "contracts/libraries/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/libraries/utils/EnumerableSet.sol": {
+      "lastModificationDate": 1673523713800,
+      "contentHash": "335c4591d8f63429138e843e91156f03",
+      "sourceName": "contracts/libraries/utils/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/libraries/utils/EnumerableMap.sol": {
+      "lastModificationDate": 1673523713800,
+      "contentHash": "587bbaf85d8405a72ea86e19e796d18d",
+      "sourceName": "contracts/libraries/utils/EnumerableMap.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "EnumerableMap"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/libraries/utils/Strings.sol": {
+      "lastModificationDate": 1673523713800,
+      "contentHash": "35959f8ce36e9188c1d9b4348e125e48",
+      "sourceName": "contracts/libraries/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/libraries/introspection/IERC165.sol": {
+      "lastModificationDate": 1673523713797,
+      "contentHash": "39dfa4b6cbda90995ba59378dd6d9969",
+      "sourceName": "contracts/libraries/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/access/TokenManager.sol": {
+      "lastModificationDate": 1673523713791,
+      "contentHash": "f7aeccc06ac72a4d9bc65e6cd8fc71d7",
+      "sourceName": "contracts/access/TokenManager.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/ERC721/IERC721.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "../peripherals/interfaces/ITimelock.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "TokenManager"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/nova/NovaFloor.sol": {
+      "lastModificationDate": 1673894449436,
+      "contentHash": "fd1780c1ac16b6ef7461848f801bba6f",
+      "sourceName": "contracts/nova/NovaFloor.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "../tokens/interfaces/IMintable.sol",
+        "../access/TokenManager.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "NovaFloor"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/libraries/token/ERC20.sol": {
+      "lastModificationDate": 1673523713798,
+      "contentHash": "715f3d6c4dba06fef37de28d004011f4",
+      "sourceName": "contracts/libraries/token/ERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../GSN/Context.sol",
+        "./IERC20.sol",
+        "../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/libraries/access/Ownable.sol": {
+      "lastModificationDate": 1673523713797,
+      "contentHash": "c25534a81df6d27d94818467f32f0a7d",
+      "sourceName": "contracts/libraries/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../GSN/Context.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/test/PositionRouterCallbackReceiverTest.sol": {
+      "lastModificationDate": 1673893359095,
+      "contentHash": "6349b2ecd78fd4c76a63fa3f15ddc063",
+      "sourceName": "contracts/core/test/PositionRouterCallbackReceiverTest.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IPositionRouterCallbackReceiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "PositionRouterCallbackReceiverTest"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/oracle/FastPriceFeed.sol": {
+      "lastModificationDate": 1673523713800,
+      "contentHash": "7165a07df030054c68463461a1b78241",
+      "sourceName": "contracts/oracle/FastPriceFeed.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "./interfaces/ISecondaryPriceFeed.sol",
+        "./interfaces/IFastPriceFeed.sol",
+        "./interfaces/IFastPriceEvents.sol",
+        "../core/interfaces/IVaultPriceFeed.sol",
+        "../core/interfaces/IPositionRouter.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "FastPriceFeed"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/oracle/interfaces/ISecondaryPriceFeed.sol": {
+      "lastModificationDate": 1673523713801,
+      "contentHash": "b82393f6d5245352d40d363c07828338",
+      "sourceName": "contracts/oracle/interfaces/ISecondaryPriceFeed.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ISecondaryPriceFeed"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/oracle/interfaces/IFastPriceEvents.sol": {
+      "lastModificationDate": 1673523713801,
+      "contentHash": "8d96ee4bdc8083c7b9febb12b3628a9c",
+      "sourceName": "contracts/oracle/interfaces/IFastPriceEvents.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IFastPriceEvents"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/peripherals/Reader.sol": {
+      "lastModificationDate": 1673523713802,
+      "contentHash": "ee2f898a1399d2cdcb0a715560ce8bbb",
+      "sourceName": "contracts/peripherals/Reader.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/token/IERC20.sol",
+        "../libraries/math/SafeMath.sol",
+        "../core/interfaces/IVault.sol",
+        "../core/interfaces/IVaultPriceFeed.sol",
+        "../tokens/interfaces/IYieldTracker.sol",
+        "../tokens/interfaces/IYieldToken.sol",
+        "../amm/interfaces/IPancakeFactory.sol",
+        "../staking/interfaces/IVester.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Reader"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/amm/interfaces/IPancakeFactory.sol": {
+      "lastModificationDate": 1673523713791,
+      "contentHash": "d0e78d6a0a744bd1372ce4c3011f81d9",
+      "sourceName": "contracts/amm/interfaces/IPancakeFactory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IPancakeFactory"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/amm/PancakeFactory.sol": {
+      "lastModificationDate": 1673523713791,
+      "contentHash": "0355be8814ee596ba6a9d43853ba7783",
+      "sourceName": "contracts/amm/PancakeFactory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IPancakeFactory.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PancakeFactory"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/VaultPriceFeed.sol": {
+      "lastModificationDate": 1673523713793,
+      "contentHash": "8a3898b8a6c93cd7fbdc6f8d2002e7ba",
+      "sourceName": "contracts/core/VaultPriceFeed.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "./interfaces/IVaultPriceFeed.sol",
+        "../oracle/interfaces/IPriceFeed.sol",
+        "../oracle/interfaces/ISecondaryPriceFeed.sol",
+        "../oracle/interfaces/IChainlinkFlags.sol",
+        "../amm/interfaces/IPancakePair.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "VaultPriceFeed"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/oracle/interfaces/IPriceFeed.sol": {
+      "lastModificationDate": 1673523713801,
+      "contentHash": "e0f5deea4da6742a03e9b3be2cebe27c",
+      "sourceName": "contracts/oracle/interfaces/IPriceFeed.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IPriceFeed"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/oracle/interfaces/IChainlinkFlags.sol": {
+      "lastModificationDate": 1673523713801,
+      "contentHash": "439e59c14a810e7ebcc457850e212c2d",
+      "sourceName": "contracts/oracle/interfaces/IChainlinkFlags.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IChainlinkFlags"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/amm/interfaces/IPancakePair.sol": {
+      "lastModificationDate": 1673523713792,
+      "contentHash": "68cf4942e69e9e5ddf3f6f86f2d57e8f",
+      "sourceName": "contracts/amm/interfaces/IPancakePair.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IPancakePair"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/amm/PancakePair.sol": {
+      "lastModificationDate": 1673523713791,
+      "contentHash": "d73a523b3331998b7b36ca1f3958c1fc",
+      "sourceName": "contracts/amm/PancakePair.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IPancakePair.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PancakePair"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/oracle/PriceFeed.sol": {
+      "lastModificationDate": 1673523713800,
+      "contentHash": "25755e5c96581a797e8147ed2e84a38a",
+      "sourceName": "contracts/oracle/PriceFeed.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IPriceFeed.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PriceFeed"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/Vault.sol": {
+      "lastModificationDate": 1673523713793,
+      "contentHash": "02aff9b11d93d15d5cd6bd27228473ab",
+      "sourceName": "contracts/core/Vault.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "../tokens/interfaces/IUSDG.sol",
+        "./interfaces/IVault.sol",
+        "./interfaces/IVaultUtils.sol",
+        "./interfaces/IVaultPriceFeed.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Vault"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/test/VaultTest.sol": {
+      "lastModificationDate": 1673523713795,
+      "contentHash": "5e9807a99ebdf8a5b83d35012c7d438c",
+      "sourceName": "contracts/core/test/VaultTest.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Vault.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "VaultTest"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/VaultUtils.sol": {
+      "lastModificationDate": 1673523713793,
+      "contentHash": "087f0bb07b254ca1b9bd838bbf9ed979",
+      "sourceName": "contracts/core/VaultUtils.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "./interfaces/IVault.sol",
+        "./interfaces/IVaultUtils.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "VaultUtils"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/oracle/FastPriceEvents.sol": {
+      "lastModificationDate": 1673523713800,
+      "contentHash": "3911acae55f3792981d90987c6f6b9fd",
+      "sourceName": "contracts/oracle/FastPriceEvents.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "./interfaces/IFastPriceEvents.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "FastPriceEvents"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/peripherals/ShortsTrackerTimelock.sol": {
+      "lastModificationDate": 1673523713802,
+      "contentHash": "49cb575b9f175f84cad3c2e60f52ab0e",
+      "sourceName": "contracts/peripherals/ShortsTrackerTimelock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../access/Governable.sol",
+        "../core/interfaces/IShortsTracker.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ShortsTrackerTimelock"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/ShortsTracker.sol": {
+      "lastModificationDate": 1673523713793,
+      "contentHash": "a2d0c13b3c0324596506b28b3b8b7974",
+      "sourceName": "contracts/core/ShortsTracker.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../access/Governable.sol",
+        "./interfaces/IShortsTracker.sol",
+        "./interfaces/IVault.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ShortsTracker"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/test/ShortsTrackerTest.sol": {
+      "lastModificationDate": 1673523713795,
+      "contentHash": "08fcbb50a6abf6dd420d1523ebd69c62",
+      "sourceName": "contracts/core/test/ShortsTrackerTest.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ShortsTracker.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ShortsTrackerTest"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/NlpManager.sol": {
+      "lastModificationDate": 1673893736122,
+      "contentHash": "fa6508a674c87714e09422fbe6e0e3b9",
+      "sourceName": "contracts/core/NlpManager.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "./interfaces/IVault.sol",
+        "./interfaces/INlpManager.sol",
+        "./interfaces/IShortsTracker.sol",
+        "../tokens/interfaces/IUSDG.sol",
+        "../tokens/interfaces/IMintable.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "NlpManager"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/peripherals/BalanceUpdater.sol": {
+      "lastModificationDate": 1673523713801,
+      "contentHash": "8ce44e4d7e769a30bf213b8c685fbfac",
+      "sourceName": "contracts/peripherals/BalanceUpdater.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/token/IERC20.sol",
+        "../libraries/math/SafeMath.sol",
+        "../core/interfaces/IVault.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "BalanceUpdater"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/nova/MigrationHandler.sol": {
+      "lastModificationDate": 1673894221958,
+      "contentHash": "9030a04a7430734d592e85315f27c01c",
+      "sourceName": "contracts/nova/MigrationHandler.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "./interfaces/IAmmRouter.sol",
+        "./interfaces/INovaMigrator.sol",
+        "../core/interfaces/IVault.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MigrationHandler"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/nova/interfaces/IAmmRouter.sol": {
+      "lastModificationDate": 1673523713796,
+      "contentHash": "c8160655c0c984513c505db6b01c36f7",
+      "sourceName": "contracts/nova/interfaces/IAmmRouter.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IAmmRouter"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/nova/interfaces/INovaMigrator.sol": {
+      "lastModificationDate": 1673894399341,
+      "contentHash": "3e59a8365c068b4aaf7f040815b7ddff",
+      "sourceName": "contracts/nova/interfaces/INovaMigrator.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "INovaMigrator"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/nova/NovaMigrator.sol": {
+      "lastModificationDate": 1673894472009,
+      "contentHash": "793fb184bbe2ef2eb6713cd4ff1cf44c",
+      "sourceName": "contracts/nova/NovaMigrator.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "./interfaces/INovaIou.sol",
+        "./interfaces/IAmmRouter.sol",
+        "./interfaces/INovaMigrator.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "NovaMigrator"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/nova/interfaces/INovaIou.sol": {
+      "lastModificationDate": 1673894389269,
+      "contentHash": "a2d4df304bfdc20c9dea8f8263a9b83b",
+      "sourceName": "contracts/nova/interfaces/INovaIou.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "INovaIou"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/nova/NovaIou.sol": {
+      "lastModificationDate": 1673894460017,
+      "contentHash": "a2278a699360bf014fcd33f4c8f38fe4",
+      "sourceName": "contracts/nova/NovaIou.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/token/IERC20.sol",
+        "../libraries/math/SafeMath.sol",
+        "./interfaces/INovaIou.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "NovaIou"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/VaultErrorController.sol": {
+      "lastModificationDate": 1673523713793,
+      "contentHash": "b4e5099a43d6cccdd3dc5b471e177025",
+      "sourceName": "contracts/core/VaultErrorController.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IVault.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "VaultErrorController"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/gambit-token/GMT.sol": {
+      "lastModificationDate": 1673523713795,
+      "contentHash": "80a44520e981f5735d2feeb2f89dff56",
+      "sourceName": "contracts/gambit-token/GMT.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "./interfaces/IGMT.sol",
+        "../peripherals/interfaces/ITimelockTarget.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "GMT"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/tokens/FaucetToken.sol": {
+      "lastModificationDate": 1673523713805,
+      "contentHash": "e8b7d1a18a7483e35bcbfd8d87381f1a",
+      "sourceName": "contracts/tokens/FaucetToken.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/token/IERC20.sol",
+        "../libraries/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "FaucetToken"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/staking/RewardTracker.sol": {
+      "lastModificationDate": 1673523713804,
+      "contentHash": "3f570a075da021c341596b9587eb75c2",
+      "sourceName": "contracts/staking/RewardTracker.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "./interfaces/IRewardDistributor.sol",
+        "./interfaces/IRewardTracker.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "RewardTracker"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/staking/interfaces/IRewardDistributor.sol": {
+      "lastModificationDate": 1673523713805,
+      "contentHash": "14be2787aa8fab1b34165070af5aeeba",
+      "sourceName": "contracts/staking/interfaces/IRewardDistributor.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IRewardDistributor"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/staking/RewardDistributor.sol": {
+      "lastModificationDate": 1673523713804,
+      "contentHash": "0b512760ebf72eebac5e946d5b6a5c7e",
+      "sourceName": "contracts/staking/RewardDistributor.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "./interfaces/IRewardDistributor.sol",
+        "./interfaces/IRewardTracker.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "RewardDistributor"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/staking/BonusDistributor.sol": {
+      "lastModificationDate": 1673523713804,
+      "contentHash": "6e797bcd0179a0866eef132f621f9f46",
+      "sourceName": "contracts/staking/BonusDistributor.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "./interfaces/IRewardDistributor.sol",
+        "./interfaces/IRewardTracker.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "BonusDistributor"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/staking/NlpBalance.sol": {
+      "lastModificationDate": 1673894809590,
+      "contentHash": "9043b678916510c34cd552f857f15dbc",
+      "sourceName": "contracts/staking/NlpBalance.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../core/interfaces/INlpManager.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "NlpBalance"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/peripherals/RewardReader.sol": {
+      "lastModificationDate": 1673523713802,
+      "contentHash": "cfdbb2ad5e0aca87a9c97a6f56d3e64d",
+      "sourceName": "contracts/peripherals/RewardReader.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/token/IERC20.sol",
+        "../libraries/math/SafeMath.sol",
+        "../staking/interfaces/IVester.sol",
+        "../staking/interfaces/IRewardTracker.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "RewardReader"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/peripherals/EsNovaBatchSender.sol": {
+      "lastModificationDate": 1673894751343,
+      "contentHash": "f3c134867290a8447f1cee03d346ea94",
+      "sourceName": "contracts/peripherals/EsNovaBatchSender.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/token/IERC20.sol",
+        "../libraries/math/SafeMath.sol",
+        "../staking/interfaces/IVester.sol",
+        "../staking/interfaces/IRewardTracker.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "EsNovaBatchSender"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/peripherals/BatchSender.sol": {
+      "lastModificationDate": 1673523713801,
+      "contentHash": "c3aeb3107d8036ec2da6db575c850339",
+      "sourceName": "contracts/peripherals/BatchSender.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/token/IERC20.sol",
+        "../libraries/math/SafeMath.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "BatchSender"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/staking/StakeManager.sol": {
+      "lastModificationDate": 1673523713804,
+      "contentHash": "132cfd74866186ce31755302c639a49d",
+      "sourceName": "contracts/staking/StakeManager.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IRewardTracker.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "StakeManager"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/nova/NOVA.sol": {
+      "lastModificationDate": 1673894438693,
+      "contentHash": "4132d6eefebcdba4f543f7cde27fe8f6",
+      "sourceName": "contracts/nova/NOVA.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../tokens/MintableBaseToken.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "NOVA"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/nova/NLP.sol": {
+      "lastModificationDate": 1673894427197,
+      "contentHash": "1295d7bc86bb0790aecb0f433dfa54ff",
+      "sourceName": "contracts/nova/NLP.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../tokens/MintableBaseToken.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "NLP"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/nova/EsNOVA.sol": {
+      "lastModificationDate": 1673894417439,
+      "contentHash": "928df93c55362f2580ea82acc9a77d6d",
+      "sourceName": "contracts/nova/EsNOVA.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../tokens/MintableBaseToken.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "EsNOVA"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/amm/UniFactory.sol": {
+      "lastModificationDate": 1673523713791,
+      "contentHash": "f0456c29d6b85057723bf06aee62a306",
+      "sourceName": "contracts/amm/UniFactory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "UniFactory"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/amm/UniNftManager.sol": {
+      "lastModificationDate": 1673523713791,
+      "contentHash": "487f93137a889c7a61913d47aae0c919",
+      "sourceName": "contracts/amm/UniNftManager.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "UniNftManager"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/amm/UniPool.sol": {
+      "lastModificationDate": 1673523713791,
+      "contentHash": "d39aa5cffb517b0dc19fec5c505bcbe8",
+      "sourceName": "contracts/amm/UniPool.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "UniPool"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/core/test/MaliciousTraderTest.sol": {
+      "lastModificationDate": 1673523713795,
+      "contentHash": "bba32a3a20642e4b7b2a799ec442bf6b",
+      "sourceName": "contracts/core/test/MaliciousTraderTest.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "MaliciousTraderTest"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1673895721419,
+      "contentHash": "4ff3cd2f6272c9a6516e9ee4f2b967d3",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">= 0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/libraries/math/Math.sol": {
+      "lastModificationDate": 1673523713797,
+      "contentHash": "a8dc87e10535bd4088c205995c1920af",
+      "sourceName": "contracts/libraries/math/Math.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/libraries/math/UQ112x112.sol": {
+      "lastModificationDate": 1673523713797,
+      "contentHash": "b0947f7742dee277ed3b140ac7608f79",
+      "sourceName": "contracts/libraries/math/UQ112x112.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "UQ112x112"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/tokens/interfaces/IBridge.sol": {
+      "lastModificationDate": 1673523713807,
+      "contentHash": "07849a9c9867dbed17dcce5aa28d8da9",
+      "sourceName": "contracts/tokens/interfaces/IBridge.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IBridge"
+      ]
+    },
+    "/Users/ashishmishra/oracle.git/web3/novainu-contracts/contracts/tokens/interfaces/INLP.sol": {
+      "lastModificationDate": 1673894846031,
+      "contentHash": "3a6803e0c134fcabae8fede42bafc298",
+      "sourceName": "contracts/tokens/interfaces/INLP.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "INLP"
+      ]
+    }
+  }
+}
